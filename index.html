@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Editor</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="img-area">
+            <div class="img-box">
+                <img>
+            </div>
+            <input type="file" name="" id="upload">
+            <label for="upload">upload</label>
+        </div>
+
+        <div class="edit-area">
+            <ul>
+                <li>
+                    <label for="saturate">saturate</label>
+                    <input type="range" min="0" max="200" value="100" id="saturate">
+                </li>
+                <li>
+                    <label for="contrast">contrast</label>
+                    <input type="range" min="0" max="200" value="100" id="contrast">
+                </li>
+                <li>
+                    <label for="brightness">brightness</label>
+                    <input type="range" min="0" max="200" value="100" id="brightness">
+                </li>
+
+                <li>
+                    <label for="sepia">sepia</label>
+                    <input type="range" min="0" max="200" value="0" id="sepia">
+                </li>
+                <li>
+                    <label for="grayscale">grayscale</label>
+                    <input type="range" min="0" max="1" value="0" id="grayscale">
+                </li>
+                <li>
+                    <label for="blur">blur</label>
+                    <input type="range" min="0" max="100" value="0" id="blur">
+                </li>
+                <li>
+                    <label for="hue-rotate">hue rotate</label>
+                    <input type="range" min="0" max="350" value="0" id="hue-rotate">
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="reset">reset</button>
+                <a download="image" class="download">download</a>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

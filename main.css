@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: #333;
+}
+
+.container {
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+@media (max-width:767px) {
+    .container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.container ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0;
+}
+
+.container ul li label {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.container ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .edit-area .btns {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .edit-area .btns button , a {
+    display: none;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.img-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-area .img-box {
+    width: 50vw;
+    margin-bottom: 20px;
+}
+
+.img-area .img-box img {
+    width: 100%;
+}
+
+.img-area input {
+    display: none;
+}
+
+.img-area label {
+    font-size: 20px;
+    border: 1px dashed white;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
